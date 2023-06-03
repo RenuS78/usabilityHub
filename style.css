@@ -32,7 +32,7 @@ p{
 }
 /* utility*/
 .container{
-    width: 1186px;
+    max-width: 1186px;
     margin-inline: auto;
     padding-inline: var(--padding_inline);
 }
