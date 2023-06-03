@@ -106,6 +106,7 @@ li{
     height: 51px;
     padding-block: 10px;
 }
+
 .banner_container{
     text-align: center;
   
@@ -119,6 +120,7 @@ li{
     justify-content: space-between;
     padding: 25px var(--padding_inline) ;
 }
+
 .company_logo img{
     width: 200px;
     padding: 12px 15px ;
@@ -169,12 +171,16 @@ li{
     gap: 30px;
     padding: 20px var(--padding_inline) 0px ;
    
+   
 }
 .companies_heading{
     text-align: center;
 }
 .companies_name{
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 3%;
+    flex-wrap: wrap;
+    row-gap: 10px;
  
 }
 .companies_name img{
@@ -195,23 +201,26 @@ li{
 }
 .features_container{
     flex-direction: column;
-   
+ 
 }
 .features_heading{
     flex-direction: column;
     align-items: center;
+    row-gap: 10px;
 }
 .features_content{
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     margin-top:30px ;
+
 }
 .card{
-    width: 30%;
+    width: 343px;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+
 }
 .card img{
     width: 40px;
@@ -224,6 +233,7 @@ li{
 .page_seaction_container{
     padding:20px var(--padding_inline) 20px ;
     gap: 40px;
+
 }
 .section_header1{
     width: 50%;
@@ -257,11 +267,15 @@ li{
 }
 
 .example_content{
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 0px 20px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+   
 }
 .link_card{
-    width: 24%;
+    width: 276px;
     min-height: 330px;
     display: flex;
     align-items: flex-end;
@@ -279,6 +293,7 @@ li{
     -moz-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
+  
 }
 .link_card:nth-child(2){
     background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(assets/asset\ 37.jpeg);
@@ -302,8 +317,8 @@ li{
 /*testing seaction*/
 .testing_section{
     margin-top: 80px;
-    /* margin-bottom: 80px; */
     background-color: #183b54;
+
 }
 .test_seaction_container{
     flex-direction: column;
@@ -323,13 +338,15 @@ footer{
     padding-bottom: 80px;
 }
 .footer_container{
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 .links{
     flex-direction: column;
     gap: 10px;
     opacity: 0.8;
+    
 }
 
 /*sub footer*/
@@ -345,4 +362,23 @@ footer{
 .sub_footer_links{
     display: flex;
     gap: 30px;
+}
+
+
+@media (max-width:955px) {
+    .nav_container{
+       display: none;
+    }
+    
+}
+@media (max-width:760px) {
+    .header_right{
+       display: none;
+        
+    }
+    .header_left{
+        width: 100%;
+    
+    }
+    
 }
